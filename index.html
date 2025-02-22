@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Análisis de Datos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0a192f;
+            color: #ccd6f6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #112240;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .timeline-container {
+            position: relative;
+            max-width: 100%;
+            margin: 80px auto;
+            text-align: center;
+        }
+        .timeline-header {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            align-items: center;
+        }
+        .timeline-header div i {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .timeline-line {
+            position: relative;
+            width: 100%;
+            height: 4px;
+            background: #64ffda;
+            margin-bottom: 20px;
+        }
+        .timeline-content {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .timeline-item {
+            background: #233554;
+            padding: 15px;
+            border-radius: 10px;
+            color: #ccd6f6;
+            min-width: 200px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .timeline-item:hover {
+            transform: scale(1.05);
+        }
+        .btn {
+            display: inline-block;
+            background: #64ffda;
+            color: #112240;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: #52e0c4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portafolio</h1>
+        <p>ETL | BI | Modelos | Retail - Banca </p>
+        <a href="cv_tu_nombre.pdf" download class="btn"><i class="fa-solid fa-download"></i> Descargar CV</a>
+    </header>
+    <div class="container">
+        <section id="timeline">
+            <h2>Proyectos Realizados</h2>
+            <div class="timeline-container">
+                <div class="timeline-header">
+                    <div><i class="fa-solid fa-database"></i> Datos</div>
+                    <div><i class="fa-solid fa-cogs"></i> ETL</div>
+                    <div><i class="fa-solid fa-server"></i> Base de Datos</div>
+                    <div><i class="fa-solid fa-chart-line"></i> Análisis</div>
+                    <div><i class="fa-solid fa-chart-bar"></i> Visualización</div>
+                    <div><i class="fa-solid fa-brain"></i> Modelos Predictivos</div>
+                </div>
+                <div class="timeline-line"></div>
+                <div class="timeline-content">
+                    <div class="timeline-item">
+                        <p>Sistema POS</p>
+                        <p>Sistema Gestión de Personal</p>
+                        <p>CRM</p>
+                        <p>Aplicacion</p>
+                        <p>Páginas Web</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p><a href="https://github.com/tuusuario/tu-repositorio" target="_blank" style="color: #64ffda; text-decoration: none;">SSIS</a></p>
+                        <p>Python</p>
+                        <p>PySpark</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p>SQL Server</p>
+                        <p>SQL Lite</p>
+                        <p>My SQL</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p>SQL</p>
+                        <p>Excel</p>
+                        <p>Python</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p>Power BI</p>
+                        <p>Looker Studio</p>
+                        <p>Python</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p>Python</p>
+                        <p>R Studio</p>
+                        <p>Orange</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>📧 Email: contacto@miportafolio.com</p>
+            <p>🌍 LinkedIn: <a href="#" class="btn">Ver Perfil</a></p>
+        </section>
+    </div>
+</body>
+</html>
